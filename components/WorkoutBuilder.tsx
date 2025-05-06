@@ -111,7 +111,7 @@ export default function WorkoutBuilder({ onExport, isExporting }: WorkoutBuilder
 
       {/* Seção "Exercícios Disponíveis" - Aparece segundo em dispositivos móveis */}
       <div className="order-2 lg:order-1">
-        <h2 className="mb-4 text-xl font-semibold">Exercícios Disponíveis</h2>
+        <h2 className="mb-4 text-xl font-semibold">Exercícios HIIT Disponíveis</h2>
 
         <div className="relative mb-4">
           <Search className="absolute left-2 top-2.5 h-4 w-4 text-muted-foreground" />
@@ -124,12 +124,15 @@ export default function WorkoutBuilder({ onExport, isExporting }: WorkoutBuilder
         </div>
 
         <Tabs defaultValue="todos">
-          <TabsList className="mb-4">
+          <TabsList className="mb-4 flex">
             <TabsTrigger value="todos">Todos</TabsTrigger>
-            <TabsTrigger value="sem-equipamento">Sem Equipamento</TabsTrigger>
-            <TabsTrigger value="corrida">Corrida</TabsTrigger>
-            <TabsTrigger value="academia">Academia</TabsTrigger>
-            <TabsTrigger value="acessorios-simples">Acessórios Simples</TabsTrigger>
+            <TabsTrigger value="sem-equipamento">Em Casa</TabsTrigger>
+            <TabsTrigger value="corrida">De Corrida</TabsTrigger>
+          </TabsList>
+
+          <TabsList className="mb-4 flex">            
+            <TabsTrigger value="academia">Na Academia</TabsTrigger>
+            <TabsTrigger value="acessorios-simples">Com Accesorios</TabsTrigger>
           </TabsList>
 
           <TabsContent value="todos" className="mt-0">

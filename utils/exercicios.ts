@@ -402,7 +402,7 @@ const exercicios: Exercicio[] = [
     id: "kettlebell-swing",
     nome: "Kettlebell Swing",
     categoria: "academia",
-    imagem: "/kattlebell-swings.gif",
+    imagem: "/kettlebell-swings.gif",
     descricao:
       "Movimento explosivo com kettlebell que trabalha principalmente posterior da coxa e glúteos.",
     instrucoes: [

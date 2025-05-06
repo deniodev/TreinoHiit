@@ -262,10 +262,6 @@ export default async function ExercicioPage({
                 ))}
               </div>
             </div>
-
-            <div className="flex justify-center">
-              <Button size="lg">Adicionar ao Treino</Button>
-            </div>
           </div>
 
           {/* Coluna lateral */}
